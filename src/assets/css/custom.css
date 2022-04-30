@@ -1,0 +1,44 @@
+html{
+    font-family: 'Exo', sans-serif;
+}
+
+.scroll-behavior{
+    scroll-behavior: smooth;
+}
+
+.c-bg-tran{
+    background: #ececec3d;
+}
+.c-bg-tran2{
+    background: #686868ad;
+}
+.image-bg{
+    height: 50vh;
+    width: 100%;
+    object-fit: contain;
+    background-position: center;
+}
+
+/* custom scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 5px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--tw-ring-color); 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--tw-ring-color); 
+  }

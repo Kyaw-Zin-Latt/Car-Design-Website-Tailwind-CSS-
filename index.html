@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en" id="html" class="dark" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Practice</title>
+    <link rel="shortcut icon" href="./src/assets/img/favicon.png">
+    <link rel="stylesheet" href="./node_modules/remixicon/fonts/remixicon.css">
+    <link rel="stylesheet" href="./src/assets/css/custom.css">
+    <link rel="stylesheet" href="./src/assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="./dist/output.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo:wght@200;300;500;600&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-white dark:bg-black scroll-behavior">
+    <div class="md:mx-60 sticky top-0 z-50">
+        <div class="container shadow-2xl  flex animate__animated items-center my-2 py-2 justify-between bg-white py-4 z-50 dark:bg-black sticky top-0 position-fixed"
+            id="nav">
+            <div class="text-dark dark:text-white columns-9 flex items-center mb-0">
+                <img src="./src/assets/img/favicon.png" class="mr-2 bg-black rounded" alt="">
+                <p class="mb-0 text-dark dark:text-white md:text-xl text-2xl">Elecar</p>
+            </div>
+            <div class="md:hidden block">
+                <i class="ri-menu-3-line text-2xl text-dark dark:text-white"></i>
+            </div>
+            <div class="md:block hidden">
+                <a href="#home" class="dark:text-white text-black hover:text-indigo-400 mr-2">Home</a>
+                <a href="#about" class="dark:text-white hover:text-indigo-400 mr-2">About</a>
+                <a href="#home" class="dark:text-white hover:text-indigo-400 mr-2">Popular</a>
+                <a href="#home" class="dark:text-white hover:text-indigo-400 mr-2">Featured</a>
+                <div class="dark:inline dark:block hidden ml-6" id="">
+                    <i id="light" class="ri-sun-fill text-black dark:text-white text-2xl"></i>
+                </div>
+                <div class="inline block dark:hidden ml-6" id="">
+                    <i id="dark" class="ri-moon-fill text-black dark:text-white text-2xl"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="md:mx-60">
+        
+
+        <!-- home start -->
+        <section id="home" class="text-center flex flex-col justify-center items-center mt-16">
+            <h5 class="text-dark dark:text-white font-bold md:text-4xl sm:text-xl home__title">Choose The Best Car</h5>
+            <p class="text-dark dark:text-white font-semibold text-xl mt-3 home__subtitle">Porsche Mission E</p>
+            <div class="flex mb-10 home__elec">
+                <i class="ri-flashlight-fill text-indigo-400"></i>
+                <p class="text-gray-300 md:text-base text-xl">Electic Car</p>
+            </div>
+            <img src="./src/assets/img/home.png" class="w-2/4 home_img" alt="">
+
+            <div class="flex justify-between w-96 mt-10">
+                <div class="home__car-name">
+                    <i class="ri-temp-cold-fill text-dark dark:text-white font-light text-xl"></i>
+                    <p class="text-dark dark:text-white font-bold text-3xl mt-4 mb-1">24°</p>
+                    <p class="text-neutral-300 text-[10px]">TEMPERATURE</p>
+                </div>
+                <div class="home__car-name">
+                    <i class="ri-dashboard-3-line text-dark dark:text-white font-light text-xl"></i>
+                    <p class="text-dark dark:text-white font-bold text-3xl mt-4 mb-1">873</p>
+                    <p class="text-neutral-300 text-[10px]">MILEAGE</p>
+                </div>
+                <div class="home__car-name">
+                    <i class="ri-flashlight-fill text-dark dark:text-white font-light text-xl"></i>
+                    <p class="text-dark dark:text-white font-bold text-3xl mt-4 mb-1">94%</p>
+                    <p class="text-neutral-300 text-[10px]">BATTERY</p>
+                </div>
+            </div>
+
+            <div class="my-20 home_start_btn animate-bounce duration-300" id="start-btn">
+                <a href="#about-section"
+                    class="text-green-400 cursor-pointer active:w-16 active:h-16 shadow-md duration-300 hover:shadow-green-600 w-20 h-20 border border-2 rounded-full flex items-center justify-center border-green-500">
+                    Start
+                </a>
+            </div>
+
+        </section>
+        <!-- home end -->
+
+        <!-- about start -->
+        <section id="" class="mb-10 pt-28">
+
+            <div class="flex justify-between gap-20 items-center" id="about-section">
+                <div id="about" class="w-1/2 relative about_left">
+                    <img src="./src/assets/img/about.png" class="rounded-lg shadow-sm" alt="">
+                    <p
+                        class="text-white px-2 text-center py-1 rounded-lg shadow c-bg-tran font-bold text-xl absolute bottom-1 right-1 ">
+                        2.500+
+                        <span class="text-gray-200 text-sm">
+                            <br>
+                            Supercharges placed <br> along popular routes
+                        </span>
+                    </p>
+                </div>
+                <div class="w-1/2 about_right">
+                    <h5 class="text-dark dark:text-white font-bold md:text-4xl sm:text-xl">
+                        Machines With <br> Future Technology
+                    </h5>
+                    <p class="text-gray-500 my-12">
+                        See the future with high-performance electric cars produced by
+                        renowned brands. They feature futuristic builds and designs with
+                        new and innovative platforms that last a long time.
+                    </p>
+                    <button
+                        class="text-white active:px-3 active:py-2 bg-indigo-400 rounded hover:bg-indigo-700 duration-300 px-5 py-4">
+                        Know more
+                    </button>
+                </div>
+            </div>
+
+        </section>
+        <!-- about end -->
+
+
+        <!-- popular start -->
+
+        <section id="popular" class="mt-24">
+            <h5 class="popular_title text-dark text-center dark:text-white font-bold md:text-2xl sm:text-xl">
+                Choose Your Electric Car <br> Of The Porsche Brand
+            </h5>
+            <div class="flex gap-4 mt-16 mb-28 swiper mySwiper">
+
+                <div class="swiper-wrapper">
+                    <div
+                        class="swiper-slide w-1/3 bg-black hover:animate-pulse  shadow hover:cursor-pointer hover:shadow-lg shadow-gray-700 rounded-lg">
+                        <div class="p-4">
+                            <p class="dark:text-white text-black font-bold text-xl">Porshe</p>
+                            <p class="dark:text-zinc-400 text-zinc-200 font-bold text-sm mb-7">Turbo 5</p>
+                            <img src="./src/assets/img/popular1.png" class="w-44 pl-5 duration-500 hover:-translate-y-5"
+                                alt="">
+                            <div class="mt-4">
+                                <div class="flex">
+                                    <div class="w-1/2">
+                                        <p class="dark:text-zinc-300 text-black text-xs w-1/2 pb-2">
+                                            <i class="ri-flashlight-fill text-dark dark:text-white font-light"></i>
+                                            3.7 Sec
+                                        </p>
+                                        <p class="dark:text-zinc-300 text-black text-xs w-1/2">
+                                            <i class="ri-flashlight-fill text-dark dark:text-white font-light"></i>
+                                            Electric
+
+                                        </p>
+                                    </div>
+                                    <p class="dark:text-zinc-300 text-black text-xs w-1/2 pr-5">
+                                        <i class="ri-flashlight-fill text-dark dark:text-white font-light"></i>
+                                        356 Km/h
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5 flex justify-between h-10">
+                            <p class="font-bold text-white text-xl pl-4">
+                                $175,900
+                            </p>
+                            <button class="bg-indigo-400 rounded-tl-lg rounded-br-lg hover:bg-indigo-700">
+                                <i class="ri-sd-card-fill text-dark dark:text-white font-light px-4 py-5"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide w-1/3 bg-black  shadow hover:cursor-pointer hover:shadow-lg shadow-gray-700 rounded-lg">
+                        <div class="p-4">
+                            <p class="dark:text-white text-black font-bold text-xl">Porshe</p>
+                            <p class="dark:text-zinc-400 text-zinc-200 font-bold text-sm mb-7">Turbo 5</p>
+                            <img src="./src/assets/img/popular2.png" class="w-44 pl-5" alt="">
+                            <div class="mt-4">
+                                <div class="flex">
+                                    <div class="w-1/2">
+                                        <p class="dark:text-zinc-300 text-black text-xs w-1/2 pb-2">
+                                            <i class="ri-flashlight-fill text-dark dark:text-white font-light"></i>
+                                            3.7 Sec
+                                        </p>
+                                        <p class="dark:text-zinc-300 text-black text-xs w-1/2">
+                                            <i class="ri-flashlight-fill text-dark dark:text-white font-light"></i>
+                                            Electric
+
+                                        </p>
+                                    </div>
+                                    <p class="dark:text-zinc-300 text-black text-xs w-1/2 pr-5">
+                                        <i class="ri-flashlight-fill text-dark dark:text-white font-light"></i>
+                                        356 Km/h
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5 flex justify-between h-10">
+                            <p class="font-bold text-white text-xl pl-4">
+                                $175,900
+                            </p>
+                            <button class="bg-indigo-400 rounded-tl-lg rounded-br-lg hover:bg-indigo-700">
+                                <i class="ri-sd-card-fill text-dark dark:text-white font-light px-4 py-5"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide w-1/3 bg-black  shadow hover:cursor-pointer hover:shadow-lg shadow-gray-700 rounded-lg">
+                        <div class="p-4">
+                            <p class="dark:text-white text-black font-bold text-xl">Porshe</p>
+                            <p class="dark:text-zinc-400 text-zinc-200 font-bold text-sm mb-7">Turbo 5</p>
+                            <img src="./src/assets/img/popular3.png" class="w-44 pl-5" alt="">
+                            <div class="mt-4">
+                                <div class="flex">
+                                    <div class="w-1/2">
+                                        <p class="dark:text-zinc-300 text-black text-xs w-1/2 pb-2">
+                                            <i class="ri-flashlight-fill text-dark dark:text-white font-light"></i>
+                                            3.7 Sec
+                                        </p>
+                                        <p class="dark:text-zinc-300 text-black text-xs w-1/2">
+                                            <i class="ri-flashlight-fill text-dark dark:text-white font-light"></i>
+                                            Electric
+
+                                        </p>
+                                    </div>
+                                    <p class="dark:text-zinc-300 text-black text-xs w-1/2 pr-5">
+                                        <i class="ri-flashlight-fill text-dark dark:text-white font-light"></i>
+                                        356 Km/h
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5 flex justify-between h-10">
+                            <p class="font-bold text-white text-xl pl-4">
+                                $175,900
+                            </p>
+                            <button class="bg-indigo-400 rounded-tl-lg rounded-br-lg hover:bg-indigo-700">
+                                <i class="ri-sd-card-fill text-dark dark:text-white font-light px-4 py-5"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide w-1/3 bg-black  shadow hover:cursor-pointer hover:shadow-lg shadow-gray-700 rounded-lg">
+                        <div class="p-4">
+                            <p class="dark:text-white text-black font-bold text-xl">Porshe</p>
+                            <p class="dark:text-zinc-400 text-zinc-200 font-bold text-sm mb-7">Turbo 5</p>
+                            <img src="./src/assets/img/popular4.png" class="w-44 pl-5" alt="">
+                            <div class="mt-4">
+                                <div class="flex">
+                                    <div class="w-1/2">
+                                        <p class="dark:text-zinc-300 text-black text-xs w-1/2 pb-2">
+                                            <i class="ri-flashlight-fill text-dark dark:text-white font-light"></i>
+                                            3.7 Sec
+                                        </p>
+                                        <p class="dark:text-zinc-300 text-black text-xs w-1/2">
+                                            <i class="ri-flashlight-fill text-dark dark:text-white font-light"></i>
+                                            Electric
+
+                                        </p>
+                                    </div>
+                                    <p class="dark:text-zinc-300 text-black text-xs w-1/2 pr-5">
+                                        <i class="ri-flashlight-fill text-dark dark:text-white font-light"></i>
+                                        356 Km/h
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5 flex justify-between h-10">
+                            <p class="font-bold text-white text-xl pl-4">
+                                $175,900
+                            </p>
+                            <button class="bg-indigo-400 rounded-tl-lg rounded-br-lg hover:bg-indigo-700">
+                                <i class="ri-sd-card-fill text-dark dark:text-white font-light px-4 py-5"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide w-1/3 bg-black  shadow hover:cursor-pointer hover:shadow-lg shadow-gray-700 rounded-lg">
+                        <div class="p-4">
+                            <p class="dark:text-white text-black font-bold text-xl">Porshe</p>
+                            <p class="dark:text-zinc-400 text-zinc-200 font-bold text-sm mb-7">Turbo 5</p>
+                            <img src="./src/assets/img/popular5.png" class="w-44 pl-5" alt="">
+                            <div class="mt-4">
+                                <div class="flex">
+                                    <div class="w-1/2">
+                                        <p class="dark:text-zinc-300 text-black text-xs w-1/2 pb-2">
+                                            <i class="ri-flashlight-fill text-dark dark:text-white font-light"></i>
+                                            3.7 Sec
+                                        </p>
+                                        <p class="dark:text-zinc-300 text-black text-xs w-1/2">
+                                            <i class="ri-flashlight-fill text-dark dark:text-white font-light"></i>
+                                            Electric
+
+                                        </p>
+                                    </div>
+                                    <p class="dark:text-zinc-300 text-black text-xs w-1/2 pr-5">
+                                        <i class="ri-flashlight-fill text-dark dark:text-white font-light"></i>
+                                        356 Km/h
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5 flex justify-between h-10">
+                            <p class="font-bold text-white text-xl pl-4">
+                                $175,900
+                            </p>
+                            <button class="bg-indigo-400 rounded-tl-lg rounded-br-lg hover:bg-indigo-700">
+                                <i class="ri-sd-card-fill text-dark dark:text-white font-light px-4 py-5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+            <div class="">
+                <h5 class="text-dark text-center more_feature_title dark:text-white font-bold md:text-2xl sm:text-xl">
+                    More Features
+                </h5>
+                <div class="relative">
+                    <img src="./src/assets/img/map.svg" class="rotate-[-28deg]" alt="">
+                    <img src="./src/assets/img/features.png" class="absolute features_img top-16 w-48 left-80" alt="">
+                    <div class="c-bg-tran2 w-32 feature_one rounded-3xl text-center py-2 absolute top-28 left-64">
+                        <p class="text-white font-bold text-xl">800v</p>
+                        <p class="text-gray-300">Turbo</p>
+                        <p class="text-gray-300">Charge</p>
+                    </div>
+                    <div class="c-bg-tran2 feature_two w-32 rounded-3xl text-center py-2 absolute top-52 right-52">
+                        <p class="text-white font-bold text-xl">800v</p>
+                        <p class="text-gray-300">Turbo</p>
+                        <p class="text-gray-300">Charge</p>
+                    </div>
+                    <div class="c-bg-tran2 w-32 feature_three rounded-3xl text-center py-2 absolute top-80 left-64">
+                        <p class="text-white font-bold text-xl">800v</p>
+                        <p class="text-gray-300">Turbo</p>
+                        <p class="text-gray-300">Charge</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- popular end -->
+
+
+        <!-- feature start -->
+
+        <section id="feature">
+            <h5 class="text-dark feature_title text-center dark:text-white font-bold md:text-2xl sm:text-xl">
+                Featured Luxury Cars
+            </h5>
+            <div class="flex justify-center items-center my-16">
+                <button class="feature_img bg-indigo-400 ml-4 mr-4 text-white p-4 rounded-2xl">
+                    All
+                </button>
+                <button class="feature_img active:bg-indigo-400 mr-4 bg-gray-800 text-zinc-400 active:text-white p-4 rounded-2xl">
+                    <img src="./src/assets/img/logo1.png" class="w-5" alt="">
+                </button>
+                <button class="feature_img active:bg-indigo-400 mr-4 bg-gray-800 text-zinc-400 active:text-white p-4 rounded-2xl">
+                    <img src="./src/assets/img/logo4.png" class="w-5" alt="">
+                </button>
+                <button class="feature_img active:bg-indigo-400 mr-4 bg-gray-800 text-zinc-400 active:text-white p-4 rounded-2xl">
+                    <img src="./src/assets/img/logo3.png" class="w-5" alt="">
+                </button>
+            </div>
+            <div class="flex gap-4 mt-16 mb-24">
+                <div
+                    class="w-1/3 feature_images bg-black hover:animate-pulse  shadow hover:cursor-pointer hover:shadow-lg shadow-gray-700 rounded-lg">
+                    <div class="p-4">
+                        <p class="dark:text-white text-black font-bold text-xl">Porshe</p>
+                        <p class="dark:text-zinc-400 text-zinc-200 font-bold text-sm mb-7">Turbo 5</p>
+                        <img src="./src/assets/img/popular1.png" class="w-44 pl-5 duration-500 hover:-translate-y-5"
+                            alt="">
+
+                    </div>
+                    <div class="mt-5 flex justify-between h-10">
+                        <p class="font-bold text-white text-xl pl-4">
+                            $175,900
+                        </p>
+                        <button class="bg-indigo-400 rounded-tl-lg rounded-br-lg hover:bg-indigo-700">
+                            <i class="ri-sd-card-fill text-dark dark:text-white font-light px-4 py-5"></i>
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="w-1/3 feature_images bg-black hover:animate-pulse  shadow hover:cursor-pointer hover:shadow-lg shadow-gray-700 rounded-lg">
+                    <div class="p-4">
+                        <p class="dark:text-white text-black font-bold text-xl">Porshe</p>
+                        <p class="dark:text-zinc-400 text-zinc-200 font-bold text-sm mb-7">Turbo 5</p>
+                        <img src="./src/assets/img/popular2.png" class="w-44 pl-5 duration-500 hover:-translate-y-5"
+                            alt="">
+
+                    </div>
+                    <div class="mt-5 flex justify-between h-10">
+                        <p class="font-bold text-white text-xl pl-4">
+                            $175,900
+                        </p>
+                        <button class="bg-indigo-400 rounded-tl-lg rounded-br-lg hover:bg-indigo-700">
+                            <i class="ri-sd-card-fill text-dark dark:text-white font-light px-4 py-5"></i>
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="w-1/3 feature_images bg-black hover:animate-pulse  shadow hover:cursor-pointer hover:shadow-lg shadow-gray-700 rounded-lg">
+                    <div class="p-4">
+                        <p class="dark:text-white text-black font-bold text-xl">Porshe</p>
+                        <p class="dark:text-zinc-400 text-zinc-200 font-bold text-sm mb-7">Turbo 5</p>
+                        <img src="./src/assets/img/popular3.png" class="w-44 pl-5 duration-500 hover:-translate-y-5"
+                            alt="">
+
+                    </div>
+                    <div class="mt-5 flex justify-between h-10">
+                        <p class="font-bold text-white text-xl pl-4">
+                            $175,900
+                        </p>
+                        <button class="bg-indigo-400 rounded-tl-lg rounded-br-lg hover:bg-indigo-700">
+                            <i class="ri-sd-card-fill text-dark dark:text-white font-light px-4 py-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-4 mb-28">
+                <div
+                    class="w-1/3 feature_images bg-black hover:animate-pulse  shadow hover:cursor-pointer hover:shadow-lg shadow-gray-700 rounded-lg">
+                    <div class="p-4">
+                        <p class="dark:text-white text-black font-bold text-xl">Porshe</p>
+                        <p class="dark:text-zinc-400 text-zinc-200 font-bold text-sm mb-7">Turbo 5</p>
+                        <img src="./src/assets/img/popular4.png" class="w-44 pl-5 duration-500 hover:-translate-y-5"
+                            alt="">
+
+                    </div>
+                    <div class="mt-5 flex justify-between h-10">
+                        <p class="font-bold text-white text-xl pl-4">
+                            $175,900
+                        </p>
+                        <button class="bg-indigo-400 rounded-tl-lg rounded-br-lg hover:bg-indigo-700">
+                            <i class="ri-sd-card-fill text-dark dark:text-white font-light px-4 py-5"></i>
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="w-1/3 feature_images bg-black hover:animate-pulse  shadow hover:cursor-pointer hover:shadow-lg shadow-gray-700 rounded-lg">
+                    <div class="p-4">
+                        <p class="dark:text-white text-black font-bold text-xl">Porshe</p>
+                        <p class="dark:text-zinc-400 text-zinc-200 font-bold text-sm mb-7">Turbo 5</p>
+                        <img src="./src/assets/img/popular5.png" class="w-44 pl-5 duration-500 hover:-translate-y-5"
+                            alt="">
+
+                    </div>
+                    <div class="mt-5 flex justify-between h-10">
+                        <p class="font-bold text-white text-xl pl-4">
+                            $175,900
+                        </p>
+                        <button class="bg-indigo-400 rounded-tl-lg rounded-br-lg hover:bg-indigo-700">
+                            <i class="ri-sd-card-fill text-dark dark:text-white font-light px-4 py-5"></i>
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="w-1/3 feature_images bg-black hover:animate-pulse  shadow hover:cursor-pointer hover:shadow-lg shadow-gray-700 rounded-lg">
+                    <div class="p-4">
+                        <p class="dark:text-white text-black font-bold text-xl">Porshe</p>
+                        <p class="dark:text-zinc-400 text-zinc-200 font-bold text-sm mb-7">Turbo 5</p>
+                        <img src="./src/assets/img/popular1.png" class="w-44 pl-5 duration-500 hover:-translate-y-5"
+                            alt="">
+
+                    </div>
+                    <div class="mt-5 flex justify-between h-10">
+                        <p class="font-bold text-white text-xl pl-4">
+                            $175,900
+                        </p>
+                        <button class="bg-indigo-400 rounded-tl-lg rounded-br-lg hover:bg-indigo-700">
+                            <i class="ri-sd-card-fill text-dark dark:text-white font-light px-4 py-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- feature end -->
+    </div>
+
+    <!-- offer start -->
+    <section class="w-full">
+        <div class="image-bg flex" style="background-image: url('./src/assets/img/offer-bg.png');">
+            <div class="flex mx-60 justify-between items-center">
+                <div class="w-1/2 offer_left pr-12">
+                    <h5 class="text-dark dark:text-white font-bold md:text-3xl sm:text-xl">
+                        Do You Want To Receive <br> Special Offers?
+                    </h5>
+                    <p class="text-gray-500 my-8">
+                        Be the first to receive all the information about our
+                        products and new cars by email by subscribing to our
+                        mailing list.
+                    </p>
+                    <button
+                        class="text-white active:px-3 active:py-2 bg-indigo-400 rounded hover:bg-indigo-700 duration-300 px-4 py-3">
+                        Subscribe Now
+                    </button>
+                </div>
+                <div class="w-1/2 offer_right">
+                    <img src="./src/assets/img/offer.png" class="" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mx-60 my-20">
+        <div class="flex justify-around w-full">
+            <img src="./src/assets/img/logo1.png"
+                class="logo-img w-10 duration-300 hover:animate-pulse brightness-50 hover:brightness-200 cursor-pointer" alt="">
+            <img src="./src/assets/img/logo6.png"
+                class="logo-img w-10 duration-300 hover:animate-pulse brightness-50 hover:brightness-200 cursor-pointer" alt="">
+            <img src="./src/assets/img/logo3.png"
+                class="logo-img w-10 duration-300 hover:animate-pulse brightness-50 hover:brightness-200 cursor-pointer" alt="">
+            <img src="./src/assets/img/logo4.png"
+                class="logo-img w-10 duration-300 hover:animate-pulse brightness-50 hover:brightness-200 cursor-pointer" alt="">
+            <img src="./src/assets/img/logo5.png"
+                class="logo-img w-10 duration-300 hover:animate-pulse brightness-50 hover:brightness-200 cursor-pointer" alt="">
+        </div>
+        <div class="flex my-20 gap-20">
+            <div class="w-1/4 footer">
+                <div class="text-dark dark:text-white columns-9 flex items-center mb-0">
+                    <img src="./src/assets/img/favicon.png" class="mr-2 bg-black rounded" alt="">
+                    <p class="mb-0 text-dark dark:text-white md:text-xl text-2xl">Elecar</p>
+                </div>
+                <p class="dark:text-zinc-400 text-dark text-sm mt-5">
+                    We offer the best electric cars of
+                    the most recognized brands in
+                    the world.
+                </p>
+            </div>
+            <div class="w-1/4 footer">
+                <div class="text-dark dark:text-white columns-9 flex items-center mb-0">
+                    <p class="mb-0 text-dark dark:text-white md:text-xl text-2xl">Company</p>
+                </div>
+                <ul class="dark:text-zinc-400 list-none text-dark text-xs mt-5">
+                    <li class="mb-2 cursor-pointer hover:text-white duration-300 text-sm">About</li>
+                    <li class="mb-2 cursor-pointer hover:text-white duration-300 text-sm">Cars</li>
+                    <li class="mb-2 cursor-pointer hover:text-white duration-300 text-sm">History</li>
+                    <li class="mb-2 cursor-pointer hover:text-white duration-300 text-sm">Shop</li>
+                </ul>
+
+            </div>
+            <div class="w-1/4 footer">
+                <div class="text-dark dark:text-white columns-9 flex items-center mb-0">
+                    <p class="mb-0 text-dark dark:text-white md:text-xl text-2xl">Information</p>
+                </div>
+                <ul class="dark:text-zinc-400 list-none text-dark text-xs mt-5">
+                    <li class="mb-2 cursor-pointer hover:text-white duration-300 text-sm">Request a quote</li>
+                    <li class="mb-2 cursor-pointer hover:text-white duration-300 text-sm">Find a dealer</li>
+                    <li class="mb-2 cursor-pointer hover:text-white duration-300 text-sm">Contact us</li>
+                    <li class="mb-2 cursor-pointer hover:text-white duration-300 text-sm">Services</li>
+                </ul>
+
+            </div>
+            <div class="w-1/4 footer">
+                <div class="text-dark dark:text-white columns-9 flex items-center mb-0">
+                    <p class="mb-0 text-dark dark:text-white md:text-xl text-2xl">Follow us</p>
+                </div>
+                <div class="flex mt-5 justify-between">
+                    <i class="ri-facebook-fill text-white hover:text-blue-700 duration-300 cursor-pointer text-2xl"></i>
+                    <i class="ri-github-fill text-white hover:text-gray-500 duration-300 cursor-pointer text-2xl"></i>
+                    <i
+                        class="ri-instagram-fill text-white hover:text-pink-500 duration-300 cursor-pointer text-2xl"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="mb-5">
+        <p class="text-center text-xs text-gray-500">&#169; Bedimcode. All rigths reserved</p>
+    </div>
+    <a class="fixed">
+        <i style="" class="ri-arrow-up-circle-fill bottom-9 text-dark dark:text-white text-3xl"></i>
+    </a>
+
+
+    <script src="./src/assets/js/scrollreveal.min.js"></script>
+    <script src="./src/assets/js/swiper-bundle.min.js"></script>
+    <script src="./node_modules/waypoints/lib/noframework.waypoints.js"></script>
+    <script src="./src/assets/js/main.js"></script>
+</body>
+
+</html>
